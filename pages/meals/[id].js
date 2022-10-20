@@ -13,7 +13,7 @@ import { Button } from '../../components/button/Button';
 import PointText from '../../components/text/PointText';
 import IngredientsTable from '../../components/mealsPage/IngredientsTable';
 
-const getSingleMeal = async ({ queryKey }) => {
+export const getSingleMeal = async ({ queryKey }) => {
   const { data } = await axios.get(`/lookup.php?i=${queryKey[1]}`);
 
   return data?.meals?.[0];

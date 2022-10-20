@@ -18,7 +18,7 @@ function Navbar() {
           <Link href="/meals">Meals</Link>
         </li>
         <li>
-          <Link href="/saveMeals">Saved Lists</Link>
+          <Link href="/savedMeals">Saved List</Link>
         </li>
       </ul>
     </nav>
