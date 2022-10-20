@@ -6,10 +6,7 @@ import classes from './Button.module.scss';
 function ButtonWithLink({ link = '/', children, variant = 'secondary' }) {
   return (
     <Link href={link}>
-      <a
-        type="button"
-        className={clsx(classes.button, classes[`variant__${variant}`])}
-      >
+      <a type="button" className={clsx(classes.button, classes[`variant__${variant}`])}>
         {children}
       </a>
     </Link>
@@ -18,15 +15,15 @@ function ButtonWithLink({ link = '/', children, variant = 'secondary' }) {
 
 export default ButtonWithLink;
 
-function Button({ children, variant = 'secondary' }) {
+function Button({ children, variant = 'secondary', className, onClick }) {
   return (
     <button
       type="button"
-      className={clsx(classes.button, classes[`variant__${variant}`])}
+      className={clsx(classes.button, className, classes[`variant__${variant}`])}
+      onClick={onClick}
     >
       {children}
     </button>
-
   );
 }
 

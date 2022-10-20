@@ -5,11 +5,11 @@ module.exports = {
   printWidth: 100,
   tabWidth: 2,
   endOfLine: 'auto',
+  bracketSpacing: true,
 };
 
 // {
 //   "arrowParens": "always",
-//   "bracketSpacing": true,
 //   "embeddedLanguageFormatting": "auto",
 //   "htmlWhitespaceSensitivity": "css",
 //   "insertPragma": false,
